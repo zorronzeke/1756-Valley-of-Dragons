@@ -6,13 +6,13 @@
 :root { color-scheme: dark; }
 
 html, body {
-  color: #e2e8f0;
-  background: transparent;   /* let layout layers show through */
+  color: #e2e8f0;        /* light text */
+  background: transparent;  /* let our layout background show */
   min-height: 100%;
 }
 
-.prose :where(a):not(:where(.not-prose *)) {
+.prose :where(a):not(:where(.not-prose *)) { 
   color: #7dd3fc;
 }
 
-/* ❌ Remove any body::before / body::after blocks */
+/* IMPORTANT: no body::before or body::after here */
