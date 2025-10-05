@@ -13,14 +13,6 @@ export default function Page() {
       <Header />
       <CountdownBanner />
 
-      {/* TEMP: force Po on screen to verify path/layering (remove after confirming) */}
-      <img
-        src="/Po.png?v=3"
-        alt="Po"
-        className="pointer-events-none select-none fixed bottom-4 right-4 w-56 md:w-72 z-[9999] drop-shadow-xl"
-        draggable={false}
-      />
-
       <Hero />
 
       <Section id="announcements" title="Announcements">
