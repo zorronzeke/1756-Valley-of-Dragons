@@ -5,7 +5,6 @@ type Props = {
   invite: string;        // your invite URL
   serverId?: string;     // optional Discord Server ID for the embedded widget
 };
-
 export default function DiscordWidget({ invite, serverId }: Props) {
   const hasWidget = !!serverId;
   return (
