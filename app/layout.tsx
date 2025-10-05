@@ -10,16 +10,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="relative">
-        {/* SITE-WIDE BACKGROUND — Po */}
+      <body className="bg-transparent">
+        {/* Layer 1: Po site-wide background */}
         <div
-          className="fixed inset-0 -z-10 bg-cover bg-center"
-          style={{ backgroundImage: "url('/Po.png?v=9')" }}
+          className="fixed inset-0 z-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/Po.png?v=11')" }}
         />
-        {/* READABILITY OVERLAY (tweak opacity as you like) */}
-        <div className="fixed inset-0 -z-5 bg-slate-950/75" />
 
-        {children}
+        {/* Layer 2: Dark overlay for readability (tweak opacity as you like) */}
+        <div className="fixed inset-0 z-10 bg-slate-950/75" />
+
+        {/* Layer 3: Your app content above everything */}
+        <div className="relative z-20">
+          {children}
+        </div>
       </body>
     </html>
   )
