@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" id="home">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-900 via-slate-900 to-slate-950" />
+      <div className="absolute inset-0 -z-10 bg-cover bg-center"
+     style={{ backgroundImage: "url('/Po.png')" }} />
       <div className="max-w-6xl mx-auto px-4 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <h1 className="text-4xl/tight md:text-5xl/tight font-extrabold">
