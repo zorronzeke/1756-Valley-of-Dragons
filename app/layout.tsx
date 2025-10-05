@@ -17,8 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           style={{ backgroundImage: "url('/Po.png?v=11')" }}
         />
 
-        {/* Layer 2: Dark overlay for readability (tweak opacity as you like) */}
-        <div className="fixed inset-0 z-10 bg-slate-950/75" />
+      {/* Layer 2: Dark overlay for readability */}
+<div className="fixed inset-0 z-10 bg-gradient-to-b from-slate-950/90 via-slate-950/85 to-slate-950/75" />
 
         {/* Layer 3: Your app content above everything */}
         <div className="relative z-20">
