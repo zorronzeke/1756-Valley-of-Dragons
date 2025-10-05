@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -20,3 +20,4 @@
     "@tailwindcss/typography": "0.5.15"
   }
 }
+
