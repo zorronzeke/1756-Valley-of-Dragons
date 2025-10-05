@@ -11,6 +11,10 @@ export default function Page() {
   return (
     <div>
       <Header />
+      <div style={{position:'fixed',top:8,left:8,zIndex:99999,background:'#000',color:'#0ff',padding:'6px 10px',fontWeight:800,letterSpacing:'0.5px'}}>
+  BUILD MARKER v12
+</div>
+
       <CountdownBanner />
 
       <Hero />
