@@ -3,37 +3,16 @@
 @tailwind utilities;
 
 /* Global styles */
-:root { 
-  color-scheme: dark; 
-}
+:root { color-scheme: dark; }
 
 html, body {
   color: #e2e8f0;
-  background: transparent;   /* let Po show through */
+  background: transparent;   /* let layout layers show through */
   min-height: 100%;
 }
 
-.prose :where(a):not(:where(.not-prose *)) { 
-  color: #7dd3fc; 
+.prose :where(a):not(:where(.not-prose *)) {
+  color: #7dd3fc;
 }
 
-/* ---- Site-wide Po background ---- */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url('/Po.png?v=10') center/cover no-repeat;
-  opacity: 0.18;   /* adjust 0.10 (faint) – 0.30 (stronger) */
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* Overlay to keep text readable */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(2, 6, 23, 0.75);  /* ~slate-900/75 */
-  z-index: -1;
-  pointer-events: none;
-}
+/* ❌ Remove any body::before / body::after blocks */
