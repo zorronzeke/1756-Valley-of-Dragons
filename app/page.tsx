@@ -1,14 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
 import CountdownBanner from '@/components/CountdownBanner';
-{/* TEMP: force Po on screen to verify path/layering */}
-<img
-  src="/Po.png?v=3"
-  alt="Po"
-  className="pointer-events-none select-none fixed bottom-4 right-4 w-56 md:w-72 z-[9999] drop-shadow-xl"
-  draggable={false}
-/>
-
 import Hero from '@/components/Hero';
 import { Section } from '@/components/Section';
 import announcements from '@/data/announcements.json';
@@ -20,6 +12,15 @@ export default function Page() {
     <div>
       <Header />
       <CountdownBanner />
+
+      {/* TEMP: force Po on screen to verify path/layering (remove after confirming) */}
+      <img
+        src="/Po.png?v=3"
+        alt="Po"
+        className="pointer-events-none select-none fixed bottom-4 right-4 w-56 md:w-72 z-[9999] drop-shadow-xl"
+        draggable={false}
+      />
+
       <Hero />
 
       <Section id="announcements" title="Announcements">
@@ -63,16 +64,24 @@ export default function Page() {
       <Section id="nap" title="NAP Rules (1756 — Old)">
         <div className="text-slate-300 max-w-prose">
           <p>This page mirrors the published Google Doc for 1756 rules. For now, treat it as historical/old until leadership updates the new version.</p>
-          <p className="mt-2"><a className="text-sky-300 hover:text-sky-200" href="https://docs.google.com/document/d/e/2PACX-1vRoZ9BmAn9uODwywgOUL7fPbW7rF5xVrIPaQ8v-8vvmqyXFk5-Yhoar1IiQY5dcMPWQjDDY6F2lp8Cf/pub" target="_blank">Open the authoritative doc →</a></p>
+          <p className="mt-2">
+            <a
+              className="text-sky-300 hover:text-sky-200"
+              href="https://docs.google.com/document/d/e/2PACX-1vRoZ9BmAn9uODwywgOUL7fPbW7rF5xVrIPaQ8v-8vvmqyXFk5-Yhoar1IiQY5dcMPWQjDDY6F2lp8Cf/pub"
+              target="_blank"
+            >
+              Open the authoritative doc →
+            </a>
+          </p>
         </div>
         <div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 prose prose-invert max-w-none">
           <h3>Highlights</h3>
           <ul>
-            <li>NAP 4 alliances & academies; DBZ removed (2025‑06‑23).</li>
+            <li>NAP 4 alliances & academies; DBZ removed (2025-06-23).</li>
             <li>Rules: No attacks between NAP, no unauthorized scouting, no poaching.</li>
             <li>Progressive discipline: debuffs + restitution and escalation.</li>
-            <li>BIA (kill event) rules + changes effective 2025‑04‑10.</li>
-            <li>Fortress/Stronghold allocation by SvS Prep ranking (updates 2025‑06‑10).</li>
+            <li>BIA (kill event) rules + changes effective 2025-04-10.</li>
+            <li>Fortress/Stronghold allocation by SvS Prep ranking (updates 2025-06-10).</li>
             <li>Sunfire Castle rotation: VoD → AOW → BCE → OPS.</li>
           </ul>
         </div>
