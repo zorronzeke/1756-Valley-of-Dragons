@@ -6,11 +6,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden" id="home">
       {/* BACKGROUND — Po full-bleed */}
-      <div
-        className="absolute inset-0 -z-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/Po.png?v=5')" }} // cache-bust
-      />
-
+     
       {/* READABILITY OVERLAY */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/60 via-slate-900/40 to-slate-900/80" />
 
