@@ -6,3 +6,13 @@
 :root { color-scheme: dark; }
 html, body { background: #0f172a; color: #e2e8f0; }
 .prose :where(a):not(:where(.not-prose *)) { color: #7dd3fc; }
+/* === Site-wide background Po === */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('/Po.png?v=8') center/cover no-repeat;
+  opacity: 0.18; /* adjust between 0.1 (very faint) and 0.3 (stronger) */
+  z-index: -1;
+  pointer-events: none;
+}
