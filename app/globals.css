@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+:root { color-scheme: dark; }
+html, body { background: #0f172a; color: #e2e8f0; }
+.prose :where(a):not(:where(.not-prose *)) { color: #7dd3fc; }
