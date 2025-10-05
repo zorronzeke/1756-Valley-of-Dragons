@@ -1,6 +1,14 @@
 import React from 'react';
 import Header from '@/components/Header';
 import CountdownBanner from '@/components/CountdownBanner';
+{/* TEMP: force Po on screen to verify path/layering */}
+<img
+  src="/Po.png?v=3"
+  alt="Po"
+  className="pointer-events-none select-none fixed bottom-4 right-4 w-56 md:w-72 z-[9999] drop-shadow-xl"
+  draggable={false}
+/>
+
 import Hero from '@/components/Hero';
 import { Section } from '@/components/Section';
 import announcements from '@/data/announcements.json';
