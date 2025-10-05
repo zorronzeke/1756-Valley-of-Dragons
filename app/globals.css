@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Global styles */
-:root { color-scheme: light; }
+:root { color-scheme: dark; }
 
 html, body {
   color: #e2e8f0;
