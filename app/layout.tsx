@@ -11,14 +11,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-transparent">
-        {/* Layer 1: Po site-wide background */}
+        {/* SITE-WIDE BACKGROUND: Po at full strength */}
         <div
           className="fixed inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/Po.png?v=11')" }}
+          style={{
+            backgroundImage: "url('/Po.png?v=15')",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            opacity: 1
+          }}
         />
-
-
-        {/* Layer 3: Your app content above everything */}
+        {/* APP CONTENT ABOVE BACKGROUND */}
         <div className="relative z-20">
           {children}
         </div>
